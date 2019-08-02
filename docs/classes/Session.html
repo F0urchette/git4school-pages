@@ -64,6 +64,13 @@
             <code>src/app/models/Session.model.ts</code>
         </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>This class modelizes a practical session</p>
+
+            </p>
 
 
 
@@ -135,12 +142,14 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="3" class="link-to-prism">src/app/models/Session.model.ts:3</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/models/Session.model.ts:6</a></div>
                             </td>
                         </tr>
 
                 <tr>
                     <td class="col-md-4">
+                            <div class="io-description"><p>Session constructor</p>
+</div>
                             <div>
                                     <b>Parameters :</b>
                                     <table class="params">
@@ -149,6 +158,7 @@
                                                 <td>Name</td>
                                                     <td>Type</td>
                                                 <td>Optional</td>
+                                                    <td>Description</td>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -163,6 +173,10 @@
                                                             No
                                                     </td>
                                                     
+                                                        <td>
+                                                                <code><p>The date from which the session begins</p>
+</code>
+                                                        </td>
                                                 </tr>
                                                 <tr>
                                                         <td>endDate</td>
@@ -175,6 +189,10 @@
                                                             No
                                                     </td>
                                                     
+                                                        <td>
+                                                                <code><p>The date on which the session ends</p>
+</code>
+                                                        </td>
                                                 </tr>
                                                 <tr>
                                                         <td>tpGroup</td>
@@ -187,6 +205,10 @@
                                                             Yes
                                                     </td>
                                                     
+                                                        <td>
+                                                                <code><p>The associated tp group</p>
+</code>
+                                                        </td>
                                                 </tr>
                                         </tbody>
                                     </table>
@@ -223,10 +245,15 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/models/Session.model.ts:6</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/models/Session.model.ts:15</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">The date on which the session ends</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -251,10 +278,15 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="5" class="link-to-prism">src/app/models/Session.model.ts:5</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/models/Session.model.ts:14</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">The date from which the session begins</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -280,10 +312,15 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/app/models/Session.model.ts:7</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/models/Session.model.ts:16</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">The associated tp group</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -316,17 +353,25 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="17"
-                            class="link-to-prism">src/app/models/Session.model.ts:17</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="35"
+                            class="link-to-prism">src/app/models/Session.model.ts:35</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Returns a json view of the session</p>
+</div>
 
+                    <div>
+                    </div>
                     <div class="io-description">
                         <b>Returns : </b>    <code>{ startDate: any; endDate: any; }</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>A json view of the session</p>
 
                     </div>
                 </td>
@@ -357,14 +402,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="13"
-                            class="link-to-prism">src/app/models/Session.model.ts:13</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/models/Session.model.ts:27</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Initialize a Session from the json configuration file</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -373,6 +420,7 @@
                                 <tr>
                                     <td>Name</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -384,6 +432,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The json configuration file</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -395,7 +447,8 @@
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>A session</p>
+
                     </div>
                 </td>
             </tr>
@@ -413,7 +466,16 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import moment from &#x27;moment/src/moment&#x27;;
 
+/**
+ * This class modelizes a practical session
+ */
 export class Session {
+  /**
+   * Session constructor
+   * @param startDate The date from which the session begins
+   * @param endDate The date on which the session ends
+   * @param tpGroup The associated tp group
+   */
   constructor(
     public startDate: Date,
     public endDate: Date,
@@ -423,10 +485,19 @@ export class Session {
     this.endDate &#x3D; moment(endDate).toDate();
   }
 
+  /**
+   * Initialize a Session from the json configuration file
+   * @param json The json configuration file
+   * @returns A session
+   */
   static withJSON(json): Session {
     return new Session(json.startDate, json.endDate, json.tpGroup);
   }
 
+  /**
+   * Returns a json view of the session
+   * @returns A json view of the session
+   */
   json() {
     let json &#x3D; {
       startDate: moment(this.startDate).toISOString(),

@@ -60,6 +60,13 @@
             <code>src/app/services/commits.service.ts</code>
         </p>
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>This service retrieves repository data from Github</p>
+
+            </p>
 
 
 
@@ -152,12 +159,14 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/services/commits.service.ts:26</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/services/commits.service.ts:32</a></div>
                             </td>
                         </tr>
 
                 <tr>
                     <td class="col-md-4">
+                            <div class="io-description"><p>CommitsService constructor</p>
+</div>
                             <div>
                                     <b>Parameters :</b>
                                     <table class="params">
@@ -241,14 +250,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="355"
-                            class="link-to-prism">src/app/services/commits.service.ts:355</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="460"
+                            class="link-to-prism">src/app/services/commits.service.ts:460</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Compares the level of progress between two questions</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -297,7 +308,8 @@
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>A number representing the difference in progress between two questions. If the number is positive, q1 is more advanced, otherwise, q2 is more advanced</p>
+
                     </div>
                 </td>
             </tr>
@@ -318,21 +330,23 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>getCommits(repo: <a href="../classes/Repository.html">Repository</a>, startDate?, dateFin?)</code>
+<code>getCommits(repo: <a href="../classes/Repository.html">Repository</a>, startDate?, endDate?)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="100"
-                            class="link-to-prism">src/app/services/commits.service.ts:100</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="144"
+                            class="link-to-prism">src/app/services/commits.service.ts:144</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Gets the commits for a given repository and updates it</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -342,6 +356,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -356,6 +371,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The repository from which the commits are retrieved</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>startDate</td>
@@ -367,9 +386,13 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The date before which commits are not retrieved</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>dateFin</td>
+                                    <td>endDate</td>
                                     <td>
                                     </td>
 
@@ -378,6 +401,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The date after which commits are not retrieved</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -417,14 +444,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="126"
-                            class="link-to-prism">src/app/services/commits.service.ts:126</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="174"
+                            class="link-to-prism">src/app/services/commits.service.ts:174</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Retrieves the readMe for a given repository</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -434,6 +463,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -448,6 +478,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The repository from which the readMe is retrieved</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -487,14 +521,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="34"
-                            class="link-to-prism">src/app/services/commits.service.ts:34</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/services/commits.service.ts:52</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Gets readMe and commits of every repository</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -504,6 +540,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -517,6 +554,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The repositories to get data from</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>startDate</td>
@@ -529,6 +570,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The date before which commits are not retrieved</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>endDate</td>
@@ -541,6 +586,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The date after which commits are not retrieved</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -548,7 +597,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                        <b>Returns : </b>    <code>Observable&lt;any[]&gt;</code>
 
                     </div>
                     <div class="io-description">
@@ -573,21 +622,23 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>getRepository(repo: <a href="../classes/Repository.html">Repository</a>, startDate?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">String</a>, dateFin?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">String</a>)</code>
+<code>getRepository(repo: <a href="../classes/Repository.html">Repository</a>, startDate?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">String</a>, endDate?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">String</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="91"
-                            class="link-to-prism">src/app/services/commits.service.ts:91</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="125"
+                            class="link-to-prism">src/app/services/commits.service.ts:125</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Gets the readMe and commits for a given repository</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -597,6 +648,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -611,6 +663,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The repository from which data is retrieved</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>startDate</td>
@@ -623,9 +679,13 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The date before which commits are not retrieved</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>dateFin</td>
+                                    <td>endDate</td>
                                     <td>
                                                 <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
                                     </td>
@@ -635,6 +695,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The date after which commits are not retrieved</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -642,7 +706,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                        <b>Returns : </b>    <code>Observable&lt;any[]&gt;</code>
 
                     </div>
                     <div class="io-description">
@@ -674,14 +738,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="42"
-                            class="link-to-prism">src/app/services/commits.service.ts:42</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">src/app/services/commits.service.ts:70</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Updates repository name, tp group and commits from raw response from Github</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -690,6 +756,7 @@
                                 <tr>
                                     <td>Name</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -701,6 +768,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The repository to update</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>response</td>
@@ -710,6 +781,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The response from Github</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>translations</td>
@@ -719,6 +794,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The translations to use if an error occurs</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -758,14 +837,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="137"
-                            class="link-to-prism">src/app/services/commits.service.ts:137</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="191"
+                            class="link-to-prism">src/app/services/commits.service.ts:191</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Inits a map for &quot;questions-completion&quot; graph</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -775,6 +856,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -789,6 +871,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The questions to handle</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>colors</td>
@@ -800,6 +886,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The commit colors to handle</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -807,11 +897,12 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>    <code>{}</code>
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank" >Object</a></code>
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>A map ready for to receive data about questions</p>
+
                     </div>
                 </td>
             </tr>
@@ -839,14 +930,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="232"
-                            class="link-to-prism">src/app/services/commits.service.ts:232</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="315"
+                            class="link-to-prism">src/app/services/commits.service.ts:315</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Inits a field for a repository in a map for &quot;students-commits&quot; graph</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -856,6 +949,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -870,6 +964,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The repository to handle</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>dict</td>
@@ -881,6 +979,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The map to update</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>questions</td>
@@ -893,6 +995,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The questions to handle</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>colors</td>
@@ -904,6 +1010,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The commit colors to handle</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -943,14 +1053,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="359"
-                            class="link-to-prism">src/app/services/commits.service.ts:359</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="468"
+                            class="link-to-prism">src/app/services/commits.service.ts:468</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Indicates if q1 is more advanced than q2, if they are both included in questions array</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -999,7 +1111,8 @@
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>A boolean, which is true if q1 is a more advanced question than q2, false otherwise</p>
+
                     </div>
                 </td>
             </tr>
@@ -1020,21 +1133,23 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>loadQuestions(dict, colors, questions: string[])</code>
+<code>loadQuestions(dict, colors, questions: string[], translations)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="212"
-                            class="link-to-prism">src/app/services/commits.service.ts:212</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="287"
+                            class="link-to-prism">src/app/services/commits.service.ts:287</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Returns the data to use in the &quot;questions-completion&quot; graph</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -1044,6 +1159,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -1057,6 +1173,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The data about questions</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>colors</td>
@@ -1068,6 +1188,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The commit colors to handle</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>questions</td>
@@ -1080,6 +1204,23 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The quesitons to handle</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>translations</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1087,11 +1228,12 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>    <code>{}</code>
+                        <b>Returns : </b>    <code>any[]</code>
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>A map with all the data needed by the &quot;questions-completion&quot; graph</p>
+
                     </div>
                 </td>
             </tr>
@@ -1112,21 +1254,23 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>loadQuestionsDict(dict, repositories, questions: string[], colors, tpGroup?, date?)</code>
+<code>loadQuestionsDict(dict, repositories, questions: string[], colors, tpGroup?, date?, translations?)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="153"
-                            class="link-to-prism">src/app/services/commits.service.ts:153</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="217"
+                            class="link-to-prism">src/app/services/commits.service.ts:217</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Returns a map containing data about questions</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -1136,6 +1280,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -1149,6 +1294,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The initialized map to update with data</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>repositories</td>
@@ -1160,6 +1309,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The repositories to handle</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>questions</td>
@@ -1172,6 +1325,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The questions to handle</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>colors</td>
@@ -1183,6 +1340,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The commit colors to handle</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>tpGroup</td>
@@ -1194,6 +1355,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The tp group to filter the repositories with if specified</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>date</td>
@@ -1205,6 +1370,23 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The date to filter the commits with if specified</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>translations</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1212,11 +1394,12 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank" >Object</a></code>
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>A map with data about questions</p>
+
                     </div>
                 </td>
             </tr>
@@ -1237,21 +1420,23 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>loadStudents(dict: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank">Object</a>, colors)</code>
+<code>loadStudents(dict: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank">Object</a>, colors, translations)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="293"
-                            class="link-to-prism">src/app/services/commits.service.ts:293</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="391"
+                            class="link-to-prism">src/app/services/commits.service.ts:391</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Returns the data to use in the &quot;students-commits&quot; graph</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -1261,6 +1446,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -1275,6 +1461,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The data about students</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>colors</td>
@@ -1286,6 +1476,23 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The commit colors to handle</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>translations</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1293,11 +1500,12 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>    <code>{}</code>
+                        <b>Returns : </b>    <code>any[]</code>
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>A map with all the data needed by the &quot;students-commits&quot; graph</p>
+
                     </div>
                 </td>
             </tr>
@@ -1325,14 +1533,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="245"
-                            class="link-to-prism">src/app/services/commits.service.ts:245</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="337"
+                            class="link-to-prism">src/app/services/commits.service.ts:337</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Returns a map containing data about students commits</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -1342,6 +1552,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -1356,6 +1567,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The repositories to handle</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>questions</td>
@@ -1368,6 +1583,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The questions to handle</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>colors</td>
@@ -1379,6 +1598,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The commit colors to handle</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>tpGroup</td>
@@ -1391,6 +1614,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The tp group to filter the repositories with if specified</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>date</td>
@@ -1403,6 +1630,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The date to filter the commits with if specified</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1410,11 +1641,12 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>    <code>{}</code>
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank" >Object</a></code>
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>A map with data about students commits</p>
+
                     </div>
                 </td>
             </tr>
@@ -1456,10 +1688,16 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/services/commits.service.ts:21</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/services/commits.service.ts:27</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Options to use when sending HTTP requests</p>
+</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -1485,10 +1723,16 @@ import { Commit } from &#x27;@models/Commit.model&#x27;;
 import { Repository } from &#x27;@models/Repository.model&#x27;;
 import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
 
+/**
+ * This service retrieves repository data from Github
+ */
 @Injectable({
   providedIn: &#x27;root&#x27;
 })
 export class CommitsService {
+  /**
+   * Options to use when sending HTTP requests
+   */
   httpOptions &#x3D; {
     headers: new HttpHeaders({
       &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,
@@ -1496,13 +1740,29 @@ export class CommitsService {
     })
   };
 
+  /**
+   * CommitsService constructor
+   * @param http
+   * @param authService
+   * @param translate
+   */
   constructor(
     private http: HttpClient,
     private authService: AuthService,
     private translate: TranslateService
   ) {}
 
-  getRepositories(repoTab, startDate?: String, endDate?: String) {
+  /**
+   * Gets readMe and commits of every repository
+   * @param repoTab The repositories to get data from
+   * @param startDate The date before which commits are not retrieved
+   * @param endDate The date after which commits are not retrieved
+   */
+  getRepositories(
+    repoTab,
+    startDate?: String,
+    endDate?: String
+  ): Observable&lt;any[]&gt; {
     const tab &#x3D; [];
     repoTab.forEach(repo &#x3D;&gt; {
       tab.push(this.getRepository(repo, startDate, endDate));
@@ -1510,6 +1770,12 @@ export class CommitsService {
     return forkJoin(tab);
   }
 
+  /**
+   * Updates repository name, tp group and commits from raw response from Github
+   * @param repo The repository to update
+   * @param response The response from Github
+   * @param translations The translations to use if an error occurs
+   */
   getRepositoryFromRaw(repo, response, translations) {
     let tab;
 
@@ -1559,16 +1825,32 @@ export class CommitsService {
     repo.commits &#x3D; response[1];
   }
 
-  getRepository(repo: Repository, startDate?: String, dateFin?: String) {
+  /**
+   * Gets the readMe and commits for a given repository
+   * @param repo The repository from which data is retrieved
+   * @param startDate The date before which commits are not retrieved
+   * @param endDate The date after which commits are not retrieved
+   */
+  getRepository(
+    repo: Repository,
+    startDate?: String,
+    endDate?: String
+  ): Observable&lt;any[]&gt; {
     return forkJoin(
       this.getReadMe(repo).pipe(catchError(error &#x3D;&gt; of(error))),
-      this.getCommits(repo, startDate, dateFin).pipe(
+      this.getCommits(repo, startDate, endDate).pipe(
         catchError(error &#x3D;&gt; of(error))
       )
     );
   }
 
-  getCommits(repo: Repository, startDate?, dateFin?): Observable&lt;Commit[]&gt; {
+  /**
+   * Gets the commits for a given repository and updates it
+   * @param repo The repository from which the commits are retrieved
+   * @param startDate The date before which commits are not retrieved
+   * @param endDate The date after which commits are not retrieved
+   */
+  getCommits(repo: Repository, startDate?, endDate?): Observable&lt;Commit[]&gt; {
     const repoHashURL &#x3D; repo.url.split(&#x27;/&#x27;);
     let url &#x3D;
       &#x27;https://api.github.com/repos/&#x27; +
@@ -1580,9 +1862,9 @@ export class CommitsService {
       startDate &#x3D; moment(startDate).toDate();
       url &#x3D; url.concat(&#x27;&amp;since&#x3D;&#x27; + startDate.toISOString());
     }
-    if (dateFin) {
-      dateFin &#x3D; moment(dateFin).toDate();
-      url &#x3D; url.concat(&#x27;&amp;until&#x3D;&#x27; + dateFin.toISOString());
+    if (endDate) {
+      endDate &#x3D; moment(endDate).toDate();
+      url &#x3D; url.concat(&#x27;&amp;until&#x3D;&#x27; + endDate.toISOString());
     }
     return this.http.get&lt;Commit[]&gt;(url, this.httpOptions).pipe(
       map(response &#x3D;&gt; {
@@ -1594,6 +1876,10 @@ export class CommitsService {
     );
   }
 
+  /**
+   * Retrieves the readMe for a given repository
+   * @param repo The repository from which the readMe is retrieved
+   */
   getReadMe(repo: Repository): Observable&lt;any&gt; {
     const tabHashURL &#x3D; repo.url.split(&#x27;/&#x27;);
     const url &#x3D;
@@ -1605,7 +1891,13 @@ export class CommitsService {
     return this.http.get(url, this.httpOptions);
   }
 
-  initQuestionsDict(questions: string[], colors) {
+  /**
+   * Inits a map for &quot;questions-completion&quot; graph
+   * @param questions The questions to handle
+   * @param colors The commit colors to handle
+   * @returns A map ready for to receive data about questions
+   */
+  initQuestionsDict(questions: string[], colors): Object {
     let dict &#x3D; {};
     questions.forEach(question &#x3D;&gt; {
       dict[question] &#x3D; {};
@@ -1621,14 +1913,25 @@ export class CommitsService {
     return dict;
   }
 
+  /**
+   * Returns a map containing data about questions
+   * @param dict The initialized map to update with data
+   * @param repositories The repositories to handle
+   * @param questions The questions to handle
+   * @param colors The commit colors to handle
+   * @param tpGroup The tp group to filter the repositories with if specified
+   * @param date The date to filter the commits with if specified
+   * @returns A map with data about questions
+   */
   loadQuestionsDict(
     dict,
     repositories,
     questions: string[],
     colors,
     tpGroup?,
-    date?
-  ) {
+    date?,
+    translations?
+  ): Object {
     let repos &#x3D; repositories.filter(
       repository &#x3D;&gt; !tpGroup || repository.tpGroup &#x3D;&#x3D;&#x3D; tpGroup
     );
@@ -1677,10 +1980,20 @@ export class CommitsService {
           (dict[question][commitColor].count / repos.length) * 100;
       }
     }
+
+    dict.translations &#x3D; translations;
+
     return dict;
   }
 
-  loadQuestions(dict, colors, questions: string[]) {
+  /**
+   * Returns the data to use in the &quot;questions-completion&quot; graph
+   * @param dict The data about questions
+   * @param colors The commit colors to handle
+   * @param questions The quesitons to handle
+   * @returns A map with all the data needed by the &quot;questions-completion&quot; graph
+   */
+  loadQuestions(dict, colors, questions: string[], translations): any[] {
     let data &#x3D; [];
     colors.forEach(color &#x3D;&gt; {
       data.push({
@@ -1691,7 +2004,8 @@ export class CommitsService {
         data: questions.map(question &#x3D;&gt; {
           return {
             y: dict[question][color.label].percentage,
-            data: dict[question][color.label]
+            data: dict[question][color.label],
+            translations: translations
           };
         })
       });
@@ -1700,6 +2014,13 @@ export class CommitsService {
     return data;
   }
 
+  /**
+   * Inits a field for a repository in a map for &quot;students-commits&quot; graph
+   * @param repository The repository to handle
+   * @param dict The map to update
+   * @param questions The questions to handle
+   * @param colors The commit colors to handle
+   */
   initStudentsDict(repository: Repository, dict, questions: string[], colors) {
     dict[repository.name] &#x3D; {
       commitTypes: {},
@@ -1713,13 +2034,22 @@ export class CommitsService {
     });
   }
 
+  /**
+   * Returns a map containing data about students commits
+   * @param repositories The repositories to handle
+   * @param questions The questions to handle
+   * @param colors The commit colors to handle
+   * @param tpGroup The tp group to filter the repositories with if specified
+   * @param date The date to filter the commits with if specified
+   * @returns A map with data about students commits
+   */
   loadStudentsDict(
     repositories: Repository[],
     questions: string[],
     colors,
     tpGroup?: string,
     date?: number
-  ) {
+  ): Object {
     let dict &#x3D; {};
     let repos &#x3D; repositories.filter(
       repository &#x3D;&gt; !tpGroup || repository.tpGroup &#x3D;&#x3D;&#x3D; tpGroup
@@ -1761,7 +2091,14 @@ export class CommitsService {
     return dict;
   }
 
-  loadStudents(dict: Object, colors) {
+  /**
+   * Returns the data to use in the &quot;students-commits&quot; graph
+   * @param dict The data about students
+   * @param colors The commit colors to handle
+   * @returns A map with all the data needed by the &quot;students-commits&quot; graph
+   */
+  loadStudents(dict: Object, colors, translations): any[] {
+    console.log(&#x27;dict: &#x27;, dict);
     let data &#x3D; [];
 
     data.push({
@@ -1780,7 +2117,8 @@ export class CommitsService {
       data: Object.entries(dict).map(studentData &#x3D;&gt; {
         return {
           y: studentData[1][&#x27;commitsCount&#x27;],
-          data: studentData[1]
+          data: studentData[1],
+          translations: translations
         };
       })
     });
@@ -1814,7 +2152,8 @@ export class CommitsService {
         data: Object.entries(dict).map(student &#x3D;&gt; {
           return {
             y: student[1][&#x27;commitTypes&#x27;][color.label].percentage,
-            data: student[1][&#x27;commitTypes&#x27;][color.label]
+            data: student[1][&#x27;commitTypes&#x27;][color.label],
+            translations: translations
           };
         })
       });
@@ -1823,11 +2162,19 @@ export class CommitsService {
     return data;
   }
 
-  compareQuestions(q1, q2, questions) {
+  /**
+   * Compares the level of progress between two questions
+   * @returns A number representing the difference in progress between two questions. If the number is positive, q1 is more advanced, otherwise, q2 is more advanced
+   */
+  compareQuestions(q1, q2, questions): number {
     return questions.indexOf(q1) - questions.indexOf(q2);
   }
 
-  isSupThan(q1, q2, questions) {
+  /**
+   * Indicates if q1 is more advanced than q2, if they are both included in questions array
+   * @returns A boolean, which is true if q1 is a more advanced question than q2, false otherwise
+   */
+  isSupThan(q1, q2, questions): boolean {
     return (
       questions.includes(q2) &amp;&amp; this.compareQuestions(q1, q2, questions) &gt; 0
     );

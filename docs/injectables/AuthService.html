@@ -138,6 +138,8 @@
 
                 <tr>
                     <td class="col-md-4">
+                            <div class="io-description"><p>AuthService constructor</p>
+</div>
                             <div>
                                     <b>Parameters :</b>
                                     <table class="params">
@@ -197,15 +199,15 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="44"
-                            class="link-to-prism">src/app/services/auth.service.ts:44</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/services/auth.service.ts:50</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>This method is called when Github redirects to the application after signing in
+                    <div class="io-description"><p>Called when Github redirects to the application after signing in.
 If authentication is valid, we store the Github access token</p>
 </div>
 
@@ -232,44 +234,24 @@ If authentication is valid, we store the Github access token</p>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>isSignedIn(caller)</code>
+<code>isSignedIn()</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="23"
-                            class="link-to-prism">src/app/services/auth.service.ts:23</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/services/auth.service.ts:29</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Returns the Github access token, so if its value is null, it&#39;s similar to a falsy value</p>
+</div>
 
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Optional</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>caller</td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
                     <div>
                     </div>
                     <div class="io-description">
@@ -306,8 +288,8 @@ If authentication is valid, we store the Github access token</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="30"
-                            class="link-to-prism">src/app/services/auth.service.ts:30</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/services/auth.service.ts:36</a></div>
                 </td>
             </tr>
 
@@ -347,8 +329,8 @@ If authentication is valid, we store the Github access token</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="61"
-                            class="link-to-prism">src/app/services/auth.service.ts:61</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/services/auth.service.ts:67</a></div>
                 </td>
             </tr>
 
@@ -397,7 +379,7 @@ If authentication is valid, we store the Github access token</p>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/services/auth.service.ts:18</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/services/auth.service.ts:22</a></div>
                             </td>
                         </tr>
 
@@ -428,6 +410,10 @@ import { Router } from &#x27;@angular/router&#x27;;
   providedIn: &#x27;root&#x27;
 })
 export class AuthService {
+  /**
+   * AuthService constructor
+   * @param router
+   */
   constructor(private router: Router) {}
 
   /**
@@ -436,9 +422,11 @@ export class AuthService {
   token &#x3D; null;
 
   /**
+   * Returns the Github access token, so if its value is null, it&#x27;s similar to a falsy value
+   *
    * @returns The Github access token
    */
-  isSignedIn(caller): string {
+  isSignedIn(): string {
     return this.token;
   }
 
@@ -456,7 +444,7 @@ export class AuthService {
   }
 
   /**
-   * This method is called when Github redirects to the application after signing in
+   * Called when Github redirects to the application after signing in.
    * If authentication is valid, we store the Github access token
    */
   callback(): Promise&lt;void&gt; {
